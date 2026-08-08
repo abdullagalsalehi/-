@@ -3,10 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>كتالوج المجوهرات والساعات</title>
+  <title>كتالوج أبو عبد الله</title>
 
   <style>
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
 
     body {
       margin: 0;
@@ -18,18 +20,19 @@
     header {
       background: #171511;
       color: white;
-      padding: 35px 20px;
       text-align: center;
+      padding: 40px 20px;
     }
 
     header h1 {
       margin: 0 0 10px;
       color: #d8b56a;
+      font-size: 42px;
     }
 
     nav {
       background: white;
-      padding: 15px;
+      padding: 16px;
       text-align: center;
       border-bottom: 1px solid #ddd;
     }
@@ -37,72 +40,79 @@
     nav a {
       color: #28231d;
       text-decoration: none;
-      margin: 8px;
       font-weight: bold;
+      margin: 10px;
     }
 
     main {
-      max-width: 1000px;
+      max-width: 900px;
       margin: auto;
       padding: 25px 15px;
     }
 
     .welcome {
       background: white;
+      text-align: center;
       padding: 30px 20px;
       border-radius: 16px;
-      text-align: center;
-      margin-bottom: 25px;
-    }
-
-    .products {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 18px;
+      margin-bottom: 30px;
     }
 
     .product {
       background: white;
-      border-radius: 16px;
+      border-radius: 18px;
       overflow: hidden;
-      box-shadow: 0 4px 15px rgba(0,0,0,.08);
+      box-shadow: 0 5px 20px rgba(0,0,0,.10);
     }
 
-    .product-image {
-      height: 210px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    .product img {
+      width: 100%;
+      max-height: 600px;
+      display: block;
+      object-fit: contain;
       background: #e8e2d8;
-      font-size: 70px;
     }
 
     .product-info {
-      padding: 18px;
+      padding: 22px;
     }
 
-    .product h3 {
-      margin: 0 0 8px;
+    .product-info h3 {
+      margin: 0 0 15px;
+      font-size: 28px;
+    }
+
+    .condition {
+      display: inline-block;
+      background: #eee8dd;
+      padding: 7px 14px;
+      border-radius: 20px;
+      font-weight: bold;
     }
 
     .price {
       color: #9b741f;
+      font-size: 24px;
       font-weight: bold;
     }
 
+    .code {
+      color: #666;
+    }
+
     .contact {
+      margin-top: 30px;
+      padding: 25px;
       background: #171511;
       color: white;
-      padding: 25px;
       border-radius: 16px;
       text-align: center;
-      margin-top: 30px;
     }
 
     footer {
       text-align: center;
-      padding: 22px;
       color: #777;
+      padding: 25px;
     }
   </style>
 </head>
@@ -110,7 +120,7 @@
 <body>
 
   <header>
-    <h1>اسم متجرك</h1>
+    <h1>أبو عبد الله</h1>
     <p>مجوهرات وساعات مختارة بعناية</p>
   </header>
 
@@ -121,49 +131,31 @@
 
   <main>
     <section class="welcome">
-      <h2>مرحبًا بكم في كتالوجنا</h2>
-      <p>اكتشف تشكيلتنا من المجوهرات والساعات الفاخرة.</p>
+      <h2>مرحبًا بكم في كتالوج أبو عبد الله</h2>
+      <p>منتجات مختارة مع التفاصيل والأسعار.</p>
     </section>
 
-    <h2 id="products">منتجات مختارة</h2>
+    <h2 id="products">المنتجات</h2>
 
-    <section class="products">
-      <article class="product">
-        <div class="product-image">⌚</div>
-        <div class="product-info">
-          <h3>ساعة رجالية</h3>
-          <p>ساعة أنيقة بتصميم مميز.</p>
-          <p class="price">تواصل لمعرفة السعر</p>
-        </div>
-      </article>
+    <article class="product">
+      <img src="IMG_3933.webp" alt="صورة منتج مرواس">
 
-      <article class="product">
-        <div class="product-image">💍</div>
-        <div class="product-info">
-          <h3>خاتم ذهبي</h3>
-          <p>خاتم فاخر بتفاصيل جميلة.</p>
-          <p class="price">تواصل لمعرفة السعر</p>
-        </div>
-      </article>
-
-      <article class="product">
-        <div class="product-image">📿</div>
-        <div class="product-info">
-          <h3>قطعة مجوهرات</h3>
-          <p>قطعة مختارة للمناسبات والهدايا.</p>
-          <p class="price">تواصل لمعرفة السعر</p>
-        </div>
-      </article>
-    </section>
+      <div class="product-info">
+        <h3>مرواس</h3>
+        <p class="condition">الحالة: زيرو</p>
+        <p class="price">السعر: 18,500</p>
+        <p class="code">رمز المنتج: 5N2056v9</p>
+      </div>
+    </article>
 
     <section class="contact" id="contact">
       <h2>للطلب والاستفسار</h2>
-      <p>سنضيف هنا رقم الهاتف وواتساب وحسابات التواصل.</p>
+      <p>تواصل مع أبو عبد الله لمعرفة المزيد.</p>
     </section>
   </main>
 
   <footer>
-    جميع الحقوق محفوظة — اسم متجرك
+    جميع الحقوق محفوظة — أبو عبد الله
   </footer>
 
 </body>
