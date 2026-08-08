@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>كتالوج المجوهرات والساعات</title>
+
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f3ef;
+      color: #28231d;
+    }
+
+    header {
+      background: #171511;
+      color: white;
+      padding: 35px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0 0 10px;
+      color: #d8b56a;
+    }
+
+    nav {
+      background: white;
+      padding: 15px;
+      text-align: center;
+      border-bottom: 1px solid #ddd;
+    }
+
+    nav a {
+      color: #28231d;
+      text-decoration: none;
+      margin: 8px;
+      font-weight: bold;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: auto;
+      padding: 25px 15px;
+    }
+
+    .welcome {
+      background: white;
+      padding: 30px 20px;
+      border-radius: 16px;
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+    }
+
+    .product {
+      background: white;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0,0,0,.08);
+    }
+
+    .product-image {
+      height: 210px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #e8e2d8;
+      font-size: 70px;
+    }
+
+    .product-info {
+      padding: 18px;
+    }
+
+    .product h3 {
+      margin: 0 0 8px;
+    }
+
+    .price {
+      color: #9b741f;
+      font-weight: bold;
+    }
+
+    .contact {
+      background: #171511;
+      color: white;
+      padding: 25px;
+      border-radius: 16px;
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 22px;
+      color: #777;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>اسم متجرك</h1>
+    <p>مجوهرات وساعات مختارة بعناية</p>
+  </header>
+
+  <nav>
+    <a href="#products">المنتجات</a>
+    <a href="#contact">التواصل</a>
+  </nav>
+
+  <main>
+    <section class="welcome">
+      <h2>مرحبًا بكم في كتالوجنا</h2>
+      <p>اكتشف تشكيلتنا من المجوهرات والساعات الفاخرة.</p>
+    </section>
+
+    <h2 id="products">منتجات مختارة</h2>
+
+    <section class="products">
+      <article class="product">
+        <div class="product-image">⌚</div>
+        <div class="product-info">
+          <h3>ساعة رجالية</h3>
+          <p>ساعة أنيقة بتصميم مميز.</p>
+          <p class="price">تواصل لمعرفة السعر</p>
+        </div>
+      </article>
+
+      <article class="product">
+        <div class="product-image">💍</div>
+        <div class="product-info">
+          <h3>خاتم ذهبي</h3>
+          <p>خاتم فاخر بتفاصيل جميلة.</p>
+          <p class="price">تواصل لمعرفة السعر</p>
+        </div>
+      </article>
+
+      <article class="product">
+        <div class="product-image">📿</div>
+        <div class="product-info">
+          <h3>قطعة مجوهرات</h3>
+          <p>قطعة مختارة للمناسبات والهدايا.</p>
+          <p class="price">تواصل لمعرفة السعر</p>
+        </div>
+      </article>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2>للطلب والاستفسار</h2>
+      <p>سنضيف هنا رقم الهاتف وواتساب وحسابات التواصل.</p>
+    </section>
+  </main>
+
+  <footer>
+    جميع الحقوق محفوظة — اسم متجرك
+  </footer>
+
+</body>
+</html>
